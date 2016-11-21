@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!-- <meta name="viewport" content="width=device-width"> -->
+	<title>La Liga Stats</title> 
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+	<div id="documentation">
+		For this project, I created a page to visualize La Liga statistics using the <a href="https://d3js.org" target="blank">d3.js</a> library. The data is from <a href="https://market.mashape.com/sportsop/soccer-sports-open-data" target="blank"> Sports Open Data</a> API. <br/><br/>
+
+		After the page is loaded, the user can choose one La Liga team from the menu, and the page will display relevant data for the team selected. For each team, there are three sets of data available to view, namely, match stats, goals and match results. 1) "Match Stats" shows three donut charts for overall matches, home matches and away matches respectively. Each of the donut charts gives the user a visual understanding of the percentage of wins, draws, and losts. 2) "Goals" shows a broken-line graph with two lines: the score line and the conceded line. The score line records the number of goals that the selected team scores in overall, home and away matches. The conceded line records the number of goals that the opponent of the selected team in respective matches. The user can mouse over the data points to see an exact number of the data. 3) "Match Results" gives the results of each match during the first eight rounds of La Liga of this season. The number of goals is represented by number of football drawn on the page. If one team did not score any goal during a match, an image of zero is displayed instead of footballs.<br/><br/>
+
+		The main reason I chose to work with La Liga data is that I've loved to watch La Liga matches since middle school. I thought it would be nice to do some data visualization of La Liga matches. However, since Sports Open Data API offers a huge amount of data, I had to make up my mind about what I should display on the page. Since people often get a sense of the team's performance through match results, I decided to show the number of wins, draws, losts as well as detailed match results. The scores and conceded is an indicator of a team's attack and defense abilities, so I included it too. For the coding part, I made two calls to the API to get relevant data. Then I wrote several functions using built-in functions of d3, such as pie() and line(), to draw different charts.<br /><br/>
+
+		In the initial stage of the project, I had some difficulty working with d3 functions, since the functions are not as straightforward as functions in p5. I looked up some code examples online to learn about d3 functions and adapted the examples to write my functions. Another problem I had is the alignment of span tags. I did not realize that I cannot set dimension of a span unless I set the display attribute to inline-block. Thanks to Craig I finally resolved the issue with alignment.<br /><br/>
+
+        Based on the feedback I received last Thursday, I have made some modification to my page. I changed the color scheme of the broken-line graph to match the color scheme of donut charts. Besides, I set match stats as the default graph so that users have something to see after selecting their team. I also appended the number of wins, draws, and losts under the donut charts. 
+
+	</div>
+
+	<div id="api">
+		<a href="index.html" id='documentation-link'>Go Back</a>
+		<br />
+		Powered by <a href="https://market.mashape.com/sportsop/soccer-sports-open-data" target="blank"> Sports Open Data</a>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/d3-color.v1.min.js"></script>
+	<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>

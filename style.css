@@ -1,0 +1,273 @@
+/*LINE PLOT CSS*/
+.axis {
+  shape-rendering: crispEdges;
+  font-size:2vw;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #000;
+}
+.special{
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 5;
+}
+#scoreLine{
+  stroke: #0074BA;
+}
+#concededLine{
+  stroke: #FF7400;
+}
+
+
+
+
+
+/*DROP DOWN MENU CSS*/
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+#myInput {
+  border-box: box-sizing;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  width:20%;
+  /*display: inline-block;*/
+  z-index: 9;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {background-color: #ddd}
+.show {display:block;}
+
+
+
+
+
+
+/*DONUT CSS*/
+.legend {
+  font-size: 14px;
+}
+rect {
+  stroke-width: 2;
+}
+#overall {
+  /*margin: 0 auto;*/
+  position: relative;
+  height: 40%;
+  width: 30%;
+  margin-left: 25%;
+}
+.tooltip {
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  display: none;
+  font-size: 14px;
+  left: 130px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 95px;
+  width: 80px;
+  z-index: 10;
+}
+
+
+
+
+
+
+/*DIV CSS*/
+body{
+  font-family: sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  /*font-family: 'Roboto Condensed', sans-serif;*/
+  background-image: url("IMG/ball.jpg");
+  background-size: 438px 345px;
+}
+.welcome{
+  /*border: 3px solid black;*/
+  position:fixed;
+  margin:auto;
+  text-align: center;
+  top:20%;
+  bottom:20%;
+  left:20%;
+  right:20%;
+}
+.welcome img{
+  width:100%;
+}
+.button{
+  /*border: 3px solid red;*/
+  float:left;
+  margin-left: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+#button1{
+  margin-left:25%;
+}
+#display{
+  clear:both;
+}
+.wdl{
+  /*border: 3px solid red;*/
+  position:relative;
+  margin-top:2%;
+  float:left;
+  font-size: 2vw;
+  padding:2%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.wdl.small{
+  width:20%;
+  height:20%;
+}
+.text{
+  font-size:0.7em;
+}
+.linePlot{
+  margin-left:25%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.tooltipLine{
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  display: none;
+  font-size: 16px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+.match{
+  position:relative;
+  /*border: 3px solid black;*/
+  margin-top:2%;
+  font-size:1.2em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.match span{
+  /*border: 3px solid blue;*/
+  height: 30px;
+  display: inline-block;
+  width: 120px;
+}
+.match img{
+  position: relative;
+  top: 15px;
+  /*border: 3px solid red;*/
+  padding: 3px;
+  width:35px;
+}
+#goal1{
+  float:left;
+  margin-left:20%;
+}
+#goal1 span{
+  text-align: right;
+  margin-right:3px;
+}
+#goal2{
+  float:right;
+  text-align:right;
+  margin-right:20%;
+}
+#goal2 span{
+  text-align: left;
+  margin-left:3px;
+}
+.title{
+  font-size:1.7em;
+  /*margin-bottom: 2px;*/
+  /*border:none;*/
+  border: 3px solid white;
+  border-radius: 25px;
+  background-color:white;
+}
+#homeTitle{
+  float:left;
+  margin-left:30%;
+}
+#awayTitle{
+  float:right;
+  margin-right:30%;
+}
+.logo{
+  position:absolute;
+  top: 5%;
+  right: 5%;
+  width: 10%;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.5vw;
+}
+.logo img{
+  width:100%;
+}
+#api{
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: right;
+}
+#api a{
+  color:black;
+}
+
+/*documentation page style*/
+#documentation{
+  position:relative;
+  margin:auto;
+  width:80%;
+  padding:3%;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:1.1em;
+}
+#documentation a{
+  color: black;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!-- <meta name="viewport" content="width=device-width"> -->
+	<title>La Liga Stats</title> 
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+	<div class="welcome">
+		<img src="IMG/2000px-Liga_BBVA.svg.png" />
+		<br />
+		<br />
+		<br />
+		<h1>Choose your team from the dropdown menu</h1>
+	</div>
+
+
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Team List</button>
+		<div id="myDropdown" class="dropdown-content">
+			<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+		</div>
+	</div>
+
+	<div class="vis button" id="button1">Match Stats</div>
+	<div class="vis button" id="button2">Goals</div>
+	<div class="vis button" id="button3">Match Results</div>
+
+	<div id="display">
+		<div class="vis wdl big" id="overall"></div>
+		<div class="vis wdl small" id="home"></div>
+		<div class="vis wdl small" id="away"></div>
+
+		<div class="vis linePlot" id="scores"></div>
+
+		<div class="vis match title" id="homeTitle">Home Team</div>
+		<div class="vis match title" id="awayTitle">Away Team</div>
+		<div class="vis match" id="goal1"></div>
+		<div class="vis match" id="goal2"></div>
+	</div>
+
+	<div class="logo" id="logo"></div>
+
+
+	<div id="api">
+		<a href="documentation.html" id='documentation-link'>Documentation</a>
+		<br />
+		Powered by <a href="https://market.mashape.com/sportsop/soccer-sports-open-data" target="blank"> Sports Open Data</a>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/d3-color.v1.min.js"></script>
+	<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
